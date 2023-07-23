@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Form() {
+function Form({transactionData,updateTransactions,setTransactionData}) {
 
 const [date, setDateNow] = useState('2023-07-23');
 const [description, setDescription] = useState("")
@@ -24,6 +24,18 @@ function handleAmount (e) {
     setAmount(e.target.value)
     
 }
+function handleSubmit (e) {
+    e.preventDefault();
+
+    const transactionAdded = {
+        date: "2022-07-09",
+        description: "Office dinner sunday",
+        category: "snacks",
+        amount: "300",
+        id: 14
+    }
+    props.updateTransactions (transactionAdded)
+}
 
 
 
@@ -42,7 +54,7 @@ function handleAmount (e) {
             <br />
             <input  value = {amount}  placeholder='Amount' onChange={handleAmount} />
             <br />
-            <button className='submit-form' onClick={}>SUBMIT</button>
+            <button className='submit-form' onClick={handleSubmit}>SUBMIT</button>
         </form>
     </div>
   )

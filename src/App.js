@@ -24,7 +24,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-    <Form />
+    <Form updateTransactions ={setTransactionData}/>
     <h3 className='transactions-heading'>BANK TRANSACTIONS</h3>
     <Table dataResults = {transactionData}/>
     
