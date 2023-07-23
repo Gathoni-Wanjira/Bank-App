@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-function Form({transactionData,updateTransactions,setTransactionData}) {
+function Form({transactionData,updateTransactions}) {
 
-const [date, setDateNow] = useState('2023-07-23');
+const [date, setDateNow] = useState('');
 const [description, setDescription] = useState("")
 const [category, setCategory] = useState("")
 const [amount, setAmount] = useState("")
@@ -28,13 +28,15 @@ function handleSubmit (e) {
     e.preventDefault();
 
     const transactionAdded = {
-        date: "2022-07-09",
-        description: "Office dinner sunday",
-        category: "snacks",
-        amount: "300",
-        id: 14
+        date: date,
+        description: description,
+        category: category,
+        amount: amount,
+        
     }
-    props.updateTransactions (transactionAdded)
+    // updateTransactions 
+    console.log([...transactionData,transactionAdded])
+    
 }
 
 
@@ -46,13 +48,13 @@ function handleSubmit (e) {
             <h3>ADD TRANSACTION</h3>
         </div>
         <form className='AdditionalForm' >
-            <input value = {date} type='date' onChange={handleDate} />
+            <input  required value = {date} type='date' onChange={handleDate} />
             <br />
-            <input value = {description} placeholder='Description' onChange={handleDescription}/>
+            <input  required value = {description} placeholder='Description' onChange={handleDescription}/>
             <br />
-            <input value = {category} placeholder='Category' onChange={handleCategory}/>
+            <input required value = {category} placeholder='Category' onChange={handleCategory}/>
             <br />
-            <input  value = {amount}  placeholder='Amount' onChange={handleAmount} />
+            <input required value = {amount}  placeholder='Amount' onChange={handleAmount} />
             <br />
             <button className='submit-form' onClick={handleSubmit}>SUBMIT</button>
         </form>
