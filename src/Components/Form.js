@@ -31,12 +31,18 @@ function handleSubmit (e) {
         date: date,
         description: description,
         category: category,
-        amount: amount,
+        amount: amount
         
     }
-    // updateTransactions 
-    console.log([...transactionData,transactionAdded])
-    
+    updateTransactions ([...transactionData,transactionAdded])
+    resetForm()
+}
+
+function resetForm () {
+    setDateNow("")
+    setDescription("")
+    setCategory("")
+    setAmount("")
 }
 
 
