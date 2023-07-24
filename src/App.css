@@ -83,3 +83,31 @@ input {
   text-align: center;
   text-decoration: underline;
 }
+.Search-bar  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 35px;
+    
+
+}
+.search-box input { 
+    flex-grow: 1;
+    border: 0px;
+    outline: none;
+
+
+}
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border: 1px solid black;
+    
+
+}
+.search-box i { 
+padding: 0 15px;
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import Table from './Components/Table';
 import Form from "./Components/Form";
+import Search from "./Components/Search";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <div className="App">
             <Form updateTransactions={setTransactionData} transactionData={transactionData} />
             <h3 className='transactions-heading'>BANK TRANSACTIONS</h3>
+            <Search />
             <Table dataResults={transactionData} />
 
         </div>
