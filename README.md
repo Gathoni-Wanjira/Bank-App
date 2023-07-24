@@ -133,7 +133,7 @@ The following have been used on this project:
 
 - Run this command to get the backend started: `json-server --watch db.json`
 - Test your server by visiting this route in the browser
-  `http://localhost:8001/transactions`
+  `http://localhost:3000/transactions`
 
 ## Core Deliverables
 
