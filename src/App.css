@@ -1,98 +1,85 @@
 .App {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .allTable {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
-td:nth-child(2){
-    width: 900px;
+td:nth-child(2) {
+  width: 900px;
 }
 
-td:nth-child(3){
-width: 200px;
+td:nth-child(3) {
+  width: 200px;
 }
 
 th {
-    text-align: left;
-    padding: 8px 35px;
-    border: 1px solid black;
+  text-align: left;
+  padding: 8px 35px;
+  border: 1px solid black;
 }
 
 td {
-    padding: 8px 10px;
-    border: 1px solid black;
+  padding: 8px 10px;
+  border: 1px solid black;
 }
 table {
-    justify-content: center;
-    width: 50%;
-    table-layout: auto;
-    gap: 75px;
-    border-collapse: collapse;
-
+  justify-content: center;
+  width: 50%;
+  table-layout: auto;
+  gap: 75px;
+  border-collapse: collapse;
 }
 
 .heading {
-   
-    gap: 95px;
-    text-decoration: underline;
-
+  gap: 95px;
+  text-decoration: underline;
 }
 
 .AdditionalForm {
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 100%;
-   
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 input {
-    width: 25%;
-    padding: 10px;
-    border: 1px solid black;
-    font-size: large;
-    
-
+  width: 25%;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: large;
 }
 .form-heading {
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: underline;
-    
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: underline;
 }
 .submit-form {
-    padding: 8px;
-    margin: 6px;
-    font-size: large;
-    background-color: black;
-    color: #fff;
-    border: none;
+  padding: 8px;
+  margin: 6px;
+  font-size: large;
+  background-color: black;
+  color: #fff;
+  border: none;
 }
 .delete-form {
-    padding: 8px;
-    font-size: large;
-    background-color: black;
-    color: #fff;
-    border: none;
-
+  padding: 8px;
+  font-size: large;
+  background-color: black;
+  color: #fff;
+  border: none;
 }
 
 .transactions-heading {
-    text-align: center;
-    text-decoration: underline;
-    
-
+  text-align: center;
+  text-decoration: underline;
 }

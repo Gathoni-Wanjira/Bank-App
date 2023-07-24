@@ -6,9 +6,9 @@ function Table({ dataResults }) {
     return (
 
         <div className='allTable'>
-            
+
             <table>
-            
+
                 <tr className='Heading'>
                     <th>Date</th>
                     <th>Description</th>
@@ -17,7 +17,7 @@ function Table({ dataResults }) {
                     <th></th>
                 </tr>
 
-               
+
                 {dataResults.map(result => {
                     console.log(result);
 
