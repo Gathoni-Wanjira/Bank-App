@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Search() {
+function Search({handleSearch}) {
+    const [searchText , setSearchText] = useState("");
+
+    function handleChange (e) {
+        e.preventDefault();
+        setSearchText(e.target.value)
+        handleSearch(e.target.value);
+    }
+
   return (
     <div className='Search-bar'>
         <div className='search-box'>
-        <input type = "text" placeholder='Search Transaction'></input><i class="fa-solid fa-magnifying-glass"></i>
+        <input onChange = {handleChange} value={searchText} type = "text" placeholder='Search Transaction'></input><i class="fa-solid fa-magnifying-glass"></i>
         </div>
         
         
@@ -12,4 +20,4 @@ function Search() {
   )
 }
 
-export default Search
+export default Search;
