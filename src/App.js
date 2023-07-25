@@ -9,7 +9,7 @@ function App() {
 
     const [transactionData, setTransactionData] = useState([])
     const [searchTransactionData, setSearchTransactionData] = useState([])
-    const [text , setText] = useState("")
+    const [text, setText] = useState("")
 
     useEffect(() => {
         console.log("Test useeffect")
@@ -23,12 +23,12 @@ function App() {
             })
     }, [])
 
-    function handleSearch (search){
+    function handleSearch(search) {
         console.log(search)
         setText(search)
-        setSearchTransactionData([...transactionData].filter( (transaction) => {
+        setSearchTransactionData([...transactionData].filter((transaction) => {
             return transaction.description.includes(search)
-        } ))
+        }))
     }
 
 
@@ -38,8 +38,8 @@ function App() {
         <div className="App">
             <Form updateTransactions={setTransactionData} transactionData={transactionData} />
             <h3 className='transactions-heading'>BANK TRANSACTIONS</h3>
-            <Search  handleSearch = {handleSearch}/>
-            <Table dataResults={ (text.length > 0) ? searchTransactionData : transactionData } />
+            <Search handleSearch={handleSearch} />
+            <Table dataResults={(text.length > 0) ? searchTransactionData : transactionData} />
 
         </div>
     );
