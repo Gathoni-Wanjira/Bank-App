@@ -1,154 +1,55 @@
 - # BANK APP
 
 
-# Bank of Flatiron
+Is a web application that allows users to add new transactions through the dynamic form, delete selected transactions and allows users to filter specific transactions through the search bar.
 
-`Bank App` is a web application built on React that displays a list of your recent bank transactions, among other features.
 
-## Learning Goals
 
-Implement a mini web app to practice on React:
 
-- Components,
-- Props,
-- State,
-- Events and data fetching
+# Setup Requirements
 
-## Technologies Used
+- Visual Studio Code, see [here](https://code.visualstudio.com/)
+- Windows Subsystem for Linux (WSL), details [here](https://learn.microsoft.com/en-us/windows/wsl/install)
+- Git and Github
+- Node.js (includes npm), see [here](https://nodejs.org/en)
+- json-server, see [here](https://www.npmjs.com/package/json-server)
+- Any Modern Web Browser
 
-The following have been used on this project:
 
+# Installation
+
+- Clone/Download the code from GitHub repository
+- Navigate to the project directory
+- Run npm install
+- Run npm start to run the app on the browser
+- The app should run on any modern web browser with JavaScript enabled
+
+# Technologies
+
+Technologies used in the project include:
+
+- JavaScript
+- JSX
 - HTML
 - CSS
-- JavaScript/React
+- JSON
+- json-server mock API using included db.json
 
-## Project Setup & Pre-requisite Data
+# Screenshots
 
-- In your project directory, create a `db.json` file and use the json data below for your server DB.
 
-  ```json
-  {
-    "transactions": [
-      {
-        "id": 1,
-        "date": "2019-12-01",
-        "description": "Paycheck from Bob's Burgers",
-        "category": "Income",
-        "amount": 1000
-      },
-      {
-        "id": 2,
-        "date": "2019-12-01",
-        "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-        "category": "Food",
-        "amount": -10.55
-      },
-      {
-        "id": 3,
-        "date": "2019-12-02",
-        "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-        "category": "Food",
-        "amount": -10.55
-      },
-      {
-        "id": 4,
-        "date": "2019-12-04",
-        "description": "Sunglasses, Urban Outfitters",
-        "category": "Fashion",
-        "amount": -24.99
-      },
-      {
-        "id": 5,
-        "date": "2019-12-06",
-        "description": "Venmo, Alice Pays you for Burrito",
-        "category": "Food",
-        "amount": 8.75
-      },
-      {
-        "id": 6,
-        "date": "2019-12-06",
-        "description": "Chipotle",
-        "category": "Food",
-        "amount": -17.59
-      },
-      {
-        "id": 7,
-        "date": "2019-12-07",
-        "description": "Birthday Check from Grandma",
-        "category": "Gift",
-        "amount": 50
-      },
-      {
-        "id": 8,
-        "date": "2019-12-09",
-        "description": "Lyft Ride",
-        "category": "Transportation",
-        "amount": -13.25
-      },
-      {
-        "id": 9,
-        "date": "2019-12-11",
-        "description": "Paycheck from Bob's Burgers",
-        "category": "Income",
-        "amount": 1000
-      },
-      {
-        "id": 10,
-        "date": "2019-12-16",
-        "description": "Tickets, Flatiron Multiplex Cinemas",
-        "category": "Entertainment",
-        "amount": -24
-      },
-      {
-        "id": 11,
-        "date": "2019-12-16",
-        "description": "MTA Vending Machine: MetroCard",
-        "category": "Transportation",
-        "amount": -116.39
-      },
-      {
-        "id": 12,
-        "date": "2019-12-17",
-        "description": "Venmo, Pay Roommate for Rent",
-        "category": "Housing",
-        "amount": -975
-      },
-      {
-        "date": "2022-07-09",
-        "description": "Office lunch",
-        "category": "Food",
-        "amount": "2000",
-        "id": 13
-      },
-      {
-        "date": "2022-07-09",
-        "description": "Office lunch Wednesday",
-        "category": "Food",
-        "amount": "3000",
-        "id": 14
-      }
-    ]
-  }
-  ```
+- HOME SECTION.
 
-- Run this command to get the backend started: `json-server --watch db.json`
-- Test your server by visiting this route in the browser
-  `http://localhost:3000/transactions`
+    <img src="./images/Home.jpeg" alt="Home"> 
 
-## Core Deliverables
+- TRANSACTIONS SECTION.
 
-As a user, you need to be able to:
+    <img src="./images/Transactions.jpeg" alt="Transaction">
 
-- See a table of all transactions
-- Fill out and submit the form to add a new transaction. This should add the new transaction to the table
-- Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
+- FILTER SECTION.
 
-### Bonus Deliverables
+   <img src="./images/Filter.jpeg" alt="Filter" />
 
-As a user, I should be able to:
-
-- Sort transactions alphabetically by category or description.
-- Delete a transaction which will remove it from the table
 
 ## Authors
 
