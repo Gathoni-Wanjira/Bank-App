@@ -1,7 +1,7 @@
 import React from 'react'
 import TransactionRow from './TransactionRow';
 
-function Table({ dataResults }) {
+function Table({ dataResults, handleDelete}) {
     console.log(dataResults);
     return (
 
@@ -21,7 +21,7 @@ function Table({ dataResults }) {
                 {dataResults.map(result => {
                     console.log(result);
 
-                    return <TransactionRow date={result.date} description={result.description} category={result.category} amount={result.amount} />
+                    return <TransactionRow key = {result.id} id = {result.id} handleDelete = {handleDelete} date={result.date} description={result.description} category={result.category} amount={result.amount} />
 
 
                 })}

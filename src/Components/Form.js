@@ -51,7 +51,7 @@ function Form({ transactionData, updateTransactions }) {
 
         <div>
             <div className='form-heading'>
-                <h3>ADD TRANSACTION</h3>
+                <h3>Add Transaction</h3>
             </div>
             <form className='AdditionalForm' >
                 <input required value={date} type='date' onChange={handleDate} />
@@ -62,7 +62,7 @@ function Form({ transactionData, updateTransactions }) {
                 <br />
                 <input required value={amount} placeholder='Amount' onChange={handleAmount} />
                 <br />
-                <button className='submit-form' onClick={handleSubmit}>SUBMIT</button>
+                <button className='submit-form' onClick={handleSubmit}>Submit</button>
             </form>
         </div>
     )

@@ -1,18 +1,28 @@
-import React from 'react'
+import React from "react";
 
-function TransactionRow(props) {
-    return (
+function TransactionRow({
+  date,
+  description,
+  category,
+  amount,
+  handleDelete,
+  id,
+}) {
 
-        <tr className='data'>
-            <td>{props.date}</td>
-            <td>{props.description}</td>
-            <td>{props.category}</td>
-            <td>{props.amount}</td>
-            <td><button className='delete-form'>Delete</button></td>
-        </tr>
-
-
-    )
+    function handleClick (e) {
+        handleDelete(id);
+    }
+  return (
+    <tr className="data">
+      <td>{date}</td>
+      <td>{description}</td>
+      <td>{category}</td>
+      <td>{amount}</td>
+      <td>
+        <button onClick = {handleClick} className="delete-form">Delete</button>
+      </td>
+    </tr>
+  );
 }
 
 export default TransactionRow;
